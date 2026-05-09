@@ -1,0 +1,47 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Secrets and credentials
+*.pem
+*.key
+.env.*
+credentials.json
+config.local.*
+
+# Sed backups (from redaction sweep)
+*.bak
+
+# Bibliometric data bundles (released as attachments, not committed)
+bibliometrics_v*/
+*.parquet
+
+# Local pre-push staging
+paper.md.before_v3_update
+
+# Local development artifacts
+*.pkl
+*.bin
+notes_to_self/
+scratchpad/

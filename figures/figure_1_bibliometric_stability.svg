@@ -1,0 +1,67 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figatitle figadesc" style="font-family: 'Calibri', 'Segoe UI', Roboto, sans-serif;">
+  <title id="figatitle">Bibliometric citation rate stable across corpus boundary expansions</title>
+  <desc id="figadesc">Three-panel bar chart showing v1, v2, and v3 corpus iterations. Top panel shows corpus size growth from 30,935 to 33,000 to 53,792 papers. Middle panel shows direct-citation papers: 13, superseded, 22. Bottom row shows proportional citation rate stable at 0.042 percent, superseded, 0.041 percent.</desc>
+
+  <!-- Background -->
+  <rect width="720" height="420" fill="#FAF9F4"/>
+
+  <!-- Title -->
+  <text x="360" y="28" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="500">Citation rate stable across corpus boundary expansions</text>
+  <text x="360" y="48" text-anchor="middle" font-size="11" fill="#5F5E5A">v3 corpus is 74% larger than v1; proportional engagement rate unchanged</text>
+
+  <!-- Panel 1: Corpus size -->
+  <g transform="translate(60, 80)">
+    <text x="0" y="0" font-size="12" fill="#2C2C2A" font-weight="600">Corpus size (papers)</text>
+
+    <!-- v1 bar -->
+    <rect x="40" y="20" width="158" height="32" fill="#85B7EB" stroke="#185FA5" stroke-width="1"/>
+    <text x="40" y="14" font-size="10" fill="#5F5E5A">v1 strict drug-discovery</text>
+    <text x="205" y="40" font-size="11" fill="#2C2C2A">30,935</text>
+
+    <!-- v2 bar -->
+    <rect x="40" y="60" width="168" height="32" fill="#B0B0AB" stroke="#5F5E5A" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="40" y="54" font-size="10" fill="#5F5E5A">v2 broader chemistry-AI methodology (superseded)</text>
+    <text x="215" y="80" font-size="11" fill="#5F5E5A">~33,000</text>
+
+    <!-- v3 bar -->
+    <rect x="40" y="100" width="274" height="32" fill="#185FA5" stroke="#0F3F6E" stroke-width="1"/>
+    <text x="40" y="94" font-size="10" fill="#5F5E5A">v3 + protein-AI + materials + cheminformatics</text>
+    <text x="320" y="120" font-size="11" fill="#2C2C2A" font-weight="600">53,792</text>
+
+    <!-- v1 reference line annotation -->
+    <line x1="198" y1="16" x2="198" y2="140" stroke="#888780" stroke-width="0.6" stroke-dasharray="2 3"/>
+    <text x="395" y="146" font-size="9" fill="#888780" font-style="italic">+74% from v1 to v3</text>
+  </g>
+
+  <!-- Panel 2: Engagement metric -->
+  <g transform="translate(60, 240)">
+    <text x="0" y="0" font-size="12" fill="#2C2C2A" font-weight="600">Direct-citation papers (proportional rate)</text>
+
+    <!-- v1 -->
+    <text x="0" y="28" font-size="10" fill="#5F5E5A">v1</text>
+    <rect x="40" y="18" width="20" height="16" fill="#85B7EB" stroke="#185FA5" stroke-width="1"/>
+    <text x="68" y="30" font-size="11" fill="#2C2C2A">13 papers</text>
+    <text x="180" y="30" font-size="11" fill="#2C2C2A" font-weight="600">0.042%</text>
+
+    <!-- v2 -->
+    <text x="0" y="60" font-size="10" fill="#5F5E5A">v2</text>
+    <text x="40" y="60" font-size="11" fill="#888780" font-style="italic">superseded by v3</text>
+
+    <!-- v3 -->
+    <text x="0" y="92" font-size="10" fill="#5F5E5A">v3</text>
+    <rect x="40" y="82" width="34" height="16" fill="#185FA5" stroke="#0F3F6E" stroke-width="1"/>
+    <text x="82" y="94" font-size="11" fill="#2C2C2A">22 papers</text>
+    <text x="180" y="94" font-size="11" fill="#2C2C2A" font-weight="600">0.041%</text>
+
+    <!-- Stability annotation -->
+    <line x1="240" y1="22" x2="290" y2="22" stroke="#5F5E5A" stroke-width="0.8"/>
+    <line x1="240" y1="22" x2="240" y2="98" stroke="#5F5E5A" stroke-width="0.8"/>
+    <line x1="240" y1="98" x2="290" y2="98" stroke="#5F5E5A" stroke-width="0.8"/>
+    <text x="300" y="58" font-size="11" fill="#2C2C2A" font-weight="500">stable</text>
+    <text x="300" y="74" font-size="9" fill="#5F5E5A" font-style="italic">across 74% corpus growth</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="360" y="395" text-anchor="middle" font-size="9" fill="#888780" font-style="italic">v3 includes AlphaFold, RFdiffusion, ProteinMPNN, ESM2, Molecular Transformer, ANI-1 (Coscientist, Burger 2020 still excluded — abstract framing)</text>
+  <text x="360" y="408" text-anchor="middle" font-size="9" fill="#888780" font-style="italic">Source: bibliometric_findings_v3.md (OpenAlex; 2017-2026; 30-figure set)</text>
+</svg>

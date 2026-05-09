@@ -1,0 +1,73 @@
+<svg viewBox="0 0 720 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figtitle figdesc" style="font-family: 'Calibri', 'Segoe UI', Roboto, sans-serif;">
+  <title id="figtitle">Figure 4: Substrate-sharing relationships among the six proposals</title>
+  <desc id="figdesc">Diagram showing P1 as the primary architectural contribution at center, with P2 P3 P4 sharing substrate with P1, P6 wrapping all generation components as an outer ring, and P5 occupying distinct architectural territory.</desc>
+  
+  <!-- Background -->
+  <rect width="720" height="540" fill="#FAF9F4"/>
+  
+  <!-- P6 outer wrapper (incubation) -->
+  <ellipse cx="290" cy="270" rx="270" ry="220" fill="none" stroke="#E8973A" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="100" y="105" font-size="13" fill="#BA7517" font-weight="500">P6: Incubation-aware (wraps generation in P1, P2, P3, P4)</text>
+  
+  <!-- P1 center node (primary) -->
+  <circle cx="290" cy="270" r="80" fill="#185FA5" stroke="#0F3F6E" stroke-width="1.5"/>
+  <text x="290" y="262" text-anchor="middle" font-size="14" fill="#fff" font-weight="600">P1</text>
+  <text x="290" y="280" text-anchor="middle" font-size="11" fill="#fff">Wiggins/Lakatos/</text>
+  <text x="290" y="294" text-anchor="middle" font-size="11" fill="#fff">Levin core</text>
+  
+  <!-- P2 node (shares substrate with P1) -->
+  <circle cx="135" cy="180" r="58" fill="#85B7EB" stroke="#185FA5" stroke-width="1.5"/>
+  <text x="135" y="174" text-anchor="middle" font-size="13" fill="#0F3F6E" font-weight="600">P2</text>
+  <text x="135" y="190" text-anchor="middle" font-size="10" fill="#0F3F6E">Geneplore/</text>
+  <text x="135" y="202" text-anchor="middle" font-size="10" fill="#0F3F6E">Copycat</text>
+  
+  <!-- P3 node (shares substrate with P1) -->
+  <circle cx="450" cy="180" r="58" fill="#85B7EB" stroke="#185FA5" stroke-width="1.5"/>
+  <text x="450" y="174" text-anchor="middle" font-size="13" fill="#0F3F6E" font-weight="600">P3</text>
+  <text x="450" y="190" text-anchor="middle" font-size="10" fill="#0F3F6E">Field-aware</text>
+  <text x="450" y="202" text-anchor="middle" font-size="10" fill="#0F3F6E">neurosymbolic</text>
+  
+  <!-- P4 node (shares substrate with P1) -->
+  <circle cx="290" cy="425" r="58" fill="#85B7EB" stroke="#185FA5" stroke-width="1.5"/>
+  <text x="290" y="419" text-anchor="middle" font-size="13" fill="#0F3F6E" font-weight="600">P4</text>
+  <text x="290" y="435" text-anchor="middle" font-size="10" fill="#0F3F6E">Constraint</text>
+  <text x="290" y="447" text-anchor="middle" font-size="10" fill="#0F3F6E">engineering</text>
+  
+  <!-- Substrate-sharing connections P2-P1, P3-P1, P4-P1 -->
+  <line x1="180" y1="218" x2="240" y2="240" stroke="#185FA5" stroke-width="2" />
+  <line x1="405" y1="218" x2="345" y2="240" stroke="#185FA5" stroke-width="2" />
+  <line x1="290" y1="367" x2="290" y2="350" stroke="#185FA5" stroke-width="2" />
+  
+  <!-- Annotations on connections -->
+  <text x="200" y="232" font-size="9" fill="#0F3F6E" font-style="italic" text-anchor="end">SNBC/PSL → SRS</text>
+  <text x="380" y="232" font-size="9" fill="#0F3F6E" font-style="italic">FSS → SRS belt</text>
+  <text x="304" y="358" font-size="9" fill="#0F3F6E" font-style="italic">CFS in SRS belt</text>
+  
+  <!-- P5 distinct territory (bottom right, separated) -->
+  <rect x="555" y="320" width="140" height="180" rx="12" fill="#888780" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="625" y="350" text-anchor="middle" font-size="13" fill="#fff" font-weight="600">P5</text>
+  <text x="625" y="370" text-anchor="middle" font-size="10" fill="#fff">Stigmergic /</text>
+  <text x="625" y="384" text-anchor="middle" font-size="10" fill="#fff">distributed</text>
+  <text x="625" y="412" text-anchor="middle" font-size="9" fill="#fff" font-style="italic">SKS, MSAGL,</text>
+  <text x="625" y="424" text-anchor="middle" font-size="9" fill="#fff" font-style="italic">DSIL, CPSDE,</text>
+  <text x="625" y="436" text-anchor="middle" font-size="9" fill="#fff" font-style="italic">HRTP</text>
+  <text x="625" y="465" text-anchor="middle" font-size="10" fill="#fff" font-style="italic">distinct</text>
+  <text x="625" y="478" text-anchor="middle" font-size="10" fill="#fff" font-style="italic">architectural</text>
+  <text x="625" y="491" text-anchor="middle" font-size="10" fill="#fff" font-style="italic">territory</text>
+  
+  <!-- Legend -->
+  <g transform="translate(20, 480)">
+    <rect x="0" y="0" width="14" height="14" fill="#185FA5"/>
+    <text x="20" y="11" font-size="10" fill="#2C2C2A">Primary architectural contribution</text>
+    
+    <rect x="0" y="22" width="14" height="14" fill="#85B7EB"/>
+    <text x="20" y="33" font-size="10" fill="#2C2C2A">Shares neurosymbolic substrate with P1</text>
+    
+    <rect x="0" y="44" width="14" height="14" fill="#888780"/>
+    <text x="20" y="55" font-size="10" fill="#2C2C2A">Distinct architectural territory</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="360" y="32" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="500">Figure 4: Substrate-sharing among the six proposals</text>
+  <text x="360" y="52" text-anchor="middle" font-size="11" fill="#5F5E5A">P1 SRS at center; P2/P3/P4 share substrate; P6 wraps generation components; P5 occupies distinct territory</text>
+</svg>
