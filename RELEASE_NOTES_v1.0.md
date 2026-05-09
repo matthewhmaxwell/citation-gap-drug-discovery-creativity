@@ -1,8 +1,8 @@
-# GitHub Release Notes — v1.0 (arXiv preprint release) — TIGHTENED
+# GitHub Release Notes — v1.0 (bioRxiv preprint release) — TIGHTENED
 
-**Release title:** v1.0 — arXiv preprint with empirical figures
+**Release title:** v1.0 — bioRxiv preprint with empirical figures
 
-**Release tag:** `v1.0-arxiv-preprint`
+**Release tag:** `v1.0-biorxiv-preprint`
 
 **Release date:** 2026-05-09
 
@@ -10,11 +10,11 @@
 
 ## Release notes (paste into GitHub release description)
 
-This release accompanies the arXiv preprint *The Citation Gap Between Drug-Discovery AI and Creativity Research: A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses* (Maxwell, 2026).
+This release accompanies the bioRxiv preprint *The Citation Gap Between Drug-Discovery AI and Creativity Research: A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses* (Maxwell, 2026).
 
 ### What this release contains
 
-The empirical core of the project at the moment of arXiv submission:
+The empirical core of the project at the moment of bioRxiv submission:
 
 **Primary deliverable:**
 - `paper.md` — main paper (~22,500 words across 13 sections plus references), with four inline SVG figures
@@ -64,7 +64,7 @@ This is the first public release. The paper has been:
 
 2. **Calibrated against external citation verification** — language calibrated from "absolute absence" to "absence of sustained engagement with canonical creativity-process frameworks" after verifying that Krenn 2022 *Nature Reviews Physics* does cite Boden's *Mind as Machine* (2008) in cognitive-science / AI-history context. Several other citation corrections applied (Schwaller misattribution retracted; FunSearch and AlphaEvolve disambiguated; Coscientist abstract language corrected; Pineau et al. corrected to 2021).
 
-3. **Substantial AI use disclosure** — Section 1.6 documents in detail how large language models (primarily Claude / Claude Code, Anthropic) contributed to the work, with explicit accountability statement and limitations acknowledgment, consistent with arXiv's January 2023 AI policy.
+3. **Substantial AI use disclosure** — Section 1.4 ("Author positioning as analytic resource") and the Acknowledgments document how large language models (primarily Claude / Claude Code, Anthropic) contributed to the work, with explicit accountability statement and limitations acknowledgment, consistent with bioRxiv's policy on AI-assisted writing.
 
 4. **AIMR-only public positioning** — earlier private drafts referenced operational engagements that have been removed for the public version. The author signs as Matthew H. Maxwell, AIMR.
 
@@ -76,19 +76,19 @@ The matrix is the work of a single author throughout; cell classifications would
 
 ### License
 
-CC BY 4.0 (Creative Commons Attribution 4.0 International). Cite the arXiv preprint when referencing this work.
+CC BY 4.0 (Creative Commons Attribution 4.0 International). Cite the bioRxiv preprint when referencing this work.
 
 ### Cite as
 
 ```
 Maxwell, M.H. (2026). The Citation Gap Between Drug-Discovery AI and Creativity Research:
-A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. arXiv:[INSERT ID].
+A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. bioRxiv DOI: [INSERT DOI].
 American Institute for Medical Research (AIMR).
 ```
 
 ### Acknowledgments
 
-Section 1.6 of the paper details the substantial role of LLM assistance (primarily Claude / Claude Code, Anthropic) in producing this work, including the bibliometric extension at 53,792-paper scale that would not have been feasible without automated execution. The author takes full responsibility for all contents of the paper.
+Section 1.4 of the paper and the Acknowledgments detail the substantial role of LLM assistance (primarily Claude / Claude Code, Anthropic) in producing this work, including the bibliometric extension at 53,792-paper scale that would not have been feasible without automated execution. The author takes full responsibility for all contents of the paper.
 
 ---
 
@@ -98,7 +98,7 @@ Section 1.6 of the paper details the substantial role of LLM assistance (primari
 - [ ] Verified `MISSING_ARTIFACTS.md` accurately reflects what is and is not in this release
 - [ ] Sensitive-data sweep complete (see `redaction_sweep.md` in figure_kit)
 - [ ] All four figures render correctly in GitHub markdown preview
-- [ ] arXiv preprint ID inserted in cite-as block (or marked as `[arXiv pending]` if not yet assigned)
+- [ ] bioRxiv DOI inserted in cite-as block (or marked as `[bioRxiv pending]` if not yet assigned)
 - [ ] Three bibliometric tarballs attached to release as downloads
 - [ ] Release marked as "latest"
-- [ ] Tag created: `v1.0-arxiv-preprint`
+- [ ] Tag created: `v1.0-biorxiv-preprint`

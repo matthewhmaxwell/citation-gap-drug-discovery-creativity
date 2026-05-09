@@ -26,7 +26,7 @@ The raw OpenAlex parquet files (~32–49 MB each), saved BERTopic models, run lo
 | `bibliometrics_v2.tar.gz` | ~32 MB | v2 broader chemistry-AI methodology corpus (33,469 papers) + scripts + run logs + BERTopic model |
 | `bibliometrics_v3.tar.gz` | ~49 MB | v3 final corpus (53,792 papers) + scripts + run logs + BERTopic model + cross-OpenAlex co-citation results |
 
-Download from the [v1.0-arxiv-preprint release page](../../releases/tag/v1.0-arxiv-preprint).
+Download from the [v1.0-biorxiv-preprint release page](../../releases/tag/v1.0-biorxiv-preprint).
 
 ## To reproduce
 

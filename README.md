@@ -1,6 +1,6 @@
 # Citation Gap: Drug-Discovery AI and Creativity Research
 
-Companion repository to the arXiv preprint *The Citation Gap Between Drug-Discovery AI and Creativity Research: A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses* (Maxwell, 2026).
+Companion repository to the bioRxiv preprint *The Citation Gap Between Drug-Discovery AI and Creativity Research: A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses* (Maxwell, 2026).
 
 ## What this is
 
@@ -74,13 +74,13 @@ CC BY 4.0 (Creative Commons Attribution 4.0 International). All figures, paper t
 
 ```
 Maxwell, M.H. (2026). The Citation Gap Between Drug-Discovery AI and Creativity Research:
-A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. arXiv:[INSERT ID].
+A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. bioRxiv DOI: [INSERT DOI].
 American Institute for Medical Research (AIMR).
 ```
 
 ## Acknowledgments
 
-Section 1.6 of `paper.md` details the substantial role of LLM assistance (primarily Claude / Claude Code, Anthropic) in producing this work, including the bibliometric extension at 53,792-paper scale that would not have been feasible without automated execution. The author takes full responsibility for all contents of the paper.
+Section 1.4 of `paper.md` and the Acknowledgments document the substantial role of LLM assistance (primarily Claude / Claude Code, Anthropic) in producing this work, including the bibliometric extension at 53,792-paper scale that would not have been feasible without automated execution. The author takes full responsibility for all contents of the paper.
 
 ## Issues and corrections
 

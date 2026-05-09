@@ -1,12 +1,12 @@
 # MISSING_ARTIFACTS.md
 
 **Repository:** citation-gap-drug-discovery-creativity
-**Release:** v1.0-arxiv-preprint
+**Release:** v1.0-biorxiv-preprint
 **Date:** 2026-05-09
 
 ---
 
-This file is an honest accounting of artifacts referenced in `paper.md` (the arXiv preprint) but not yet committed to this repository as of v1.0.
+This file is an honest accounting of artifacts referenced in `paper.md` (the bioRxiv preprint) but not yet committed to this repository as of v1.0.
 
 ## What is in v1.0
 
@@ -50,7 +50,7 @@ The following supplementary artifacts are referenced in the paper's Acknowledgme
 
 ## Why these are not in v1.0
 
-The repository is being released to coincide with arXiv preprint submission. The author (single author, AIMR) prioritized verifying that committed artifacts are accurate, current, and consistent with the paper's calibrated claims rather than rushing all referenced supplementary materials into the v1.0 release. Several of the missing artifacts exist in earlier project state but require an audit pass before public release to ensure they reflect post-Block-39 citation corrections and post-Block-40 framing calibration.
+The repository is being released to coincide with bioRxiv preprint submission. The author (single author, AIMR) prioritized verifying that committed artifacts are accurate, current, and consistent with the paper's calibrated claims rather than rushing all referenced supplementary materials into the v1.0 release. Several of the missing artifacts exist in earlier project state but require an audit pass before public release to ensure they reflect post-Block-39 citation corrections and post-Block-40 framing calibration.
 
 ## Plan for v1.1
 
@@ -68,7 +68,7 @@ Readers needing those artifacts before v1.1 ships should contact the author dire
 
 ```
 Maxwell, M.H. (2026). The Citation Gap Between Drug-Discovery AI and Creativity Research:
-A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. arXiv:[INSERT ID].
+A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. bioRxiv DOI: [INSERT DOI].
 American Institute for Medical Research (AIMR). v1.0 release: [INSERT DATE].
 Some supplementary artifacts pending in v1.1; see MISSING_ARTIFACTS.md.
 ```
