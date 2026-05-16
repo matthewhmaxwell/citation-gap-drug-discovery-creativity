@@ -1,87 +1,96 @@
-# Citation Gap: Drug-Discovery AI and Creativity Research
+# Expanding the Method Space of Drug-Discovery AI: Directions from Creativity Research
 
-Companion repository to the bioRxiv preprint *The Citation Gap Between Drug-Discovery AI and Creativity Research: A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses* (Maxwell, 2026).
+**Author:** Matthew H. Maxwell
+**Affiliation:** American Institute for Medical Research (AIMR)
+**Correspondence:** matt@aimronline.org
+**License:** CC BY 4.0
+**Release:** v1.0 (2026-05-09)
 
-## What this is
+---
 
-This repo accompanies a paper that documents the citation gap between drug-discovery AI and creativity research at two empirical scales (n=100 structured systematic survey + 53,792-paper formal bibliometric extension), characterizes the gap with a 31-row × 14-column structured matrix populating creativity-framework × AI-method cell statuses, and derives six architectural hypotheses (P1–P6) for testing.
+## About
 
-The repo's empirical core (paper, four figures, bibliometric findings, philosophical accounting, held-out validation, novel-prediction operationalization) is committed here. Several supplementary materials referenced in the paper are pending v1.1 — see [`MISSING_ARTIFACTS.md`](MISSING_ARTIFACTS.md) for the honest accounting.
+This repository accompanies the preprint *Expanding the Method Space of Drug-Discovery AI: Directions from Creativity Research* (Maxwell, 2026).
 
-## Headline empirical findings
+The paper documents an empirical gap between drug-discovery AI literature and creativity research, infers an architectural gap from that citation gap, and derives six research-derived architectural directions for future drug-discovery AI systems.
 
-| Metric | Result |
+The paper makes three claims of progressively weaker evidential strength:
+
+1. **Established (empirical):** at scale, drug-discovery AI literature does not engage substantively with creativity research. Across a 53,792-paper corpus spanning drug-discovery AI, chemistry-AI methodology, protein-AI, materials informatics, and computational chemistry, 22 papers (0.041%) cite any of thirty canonical creativity-research figures. The proportional rate is stable across three corpus iterations of expanding scope.
+
+2. **Plausible (architectural inference):** the citation gap reflects an architectural gap. A structured 31 × 14 matrix maps creativity frameworks against AI approaches in current use, producing 434 cells classified by implementation status. Hybrid neurosymbolic architecture is empty across all 31 sub-clusters under strict reading; held-out validation reproduces the pattern.
+
+3. **Speculative (performance hypothesis):** closing the architectural gap would improve drug-discovery decisions. Six research-derived architectural directions translate the matrix's empty cells into specifiable AI systems. The hypotheses are testable predictions for future work, not demonstrated performance results.
+
+---
+
+## Headline findings
+
+| Finding | Value |
 |---|---|
-| Corpus size (v3, broadest) | **53,792 papers** (drug-discovery AI + chem-AI methodology + protein-AI + materials informatics + comp-chem-ML + QSAR/cheminformatics) |
-| Direct-citation rate | **22 papers (0.041%)** cite ≥1 of 30 canonical creativity-research figures |
-| Substantive engagements | **3** — all at the biology-AI-philosophy frontier, none in core methodology |
-| Citation-rate stability across corpora | **0.041–0.045%** across v1 (30,935 papers) → v2 (33,469) → v3 (53,792); 74% corpus growth, rate unchanged — empirically rules out corpus-boundary objection |
-| Kuhn parallel-vocabulary | **"paradigm shift" in 411 corpus abstracts with zero Kuhn citations among them** — cleanest single quantification of reinvention without attribution |
-| Topic-modeling community separation | Max community balance 0.018 in v3 (lower = stronger separation; v1 was 0.080) |
+| Corpus size (v3) | 53,792 papers |
+| Direct-citation papers | 22 (0.041%) |
+| Substantive engagements | 3 (all at biology-AI-philosophy frontier) |
+| Figures appearing in corpus | 11 of 30 |
+| Citation rate stability | 0.041–0.045% across +74% corpus expansion |
+| Kuhn "paradigm shift" abstracts | 411, with zero Kuhn citations |
+| Matrix cells | 434 (31 sub-clusters × 14 AI methods) |
+| IMPLEMENTED cells | 14 (3.2%) |
+| Type 1 EMPTY cells | 188 (43.3%) |
+| X9 neurosymbolic | Type 1 EMPTY in all 31 sub-clusters under strict reading |
 
-## Figures
-
-The paper embeds four SVG figures inline. Standalone copies are also available in [`figures/`](figures/):
-
-- **Figure 1**: [Citation rate stability across corpus boundary expansions](figures/figure_1_bibliometric_stability.svg)
-- **Figure 2**: [Engagement with 30 canonical creativity-research figures](figures/figure_2_figure_engagement.svg)
-- **Figure 3**: [Matrix heatmap of cell statuses (31 × 14)](figures/figure_3_matrix_heatmap.svg)
-- **Figure 4**: [Substrate-sharing among the six derived hypotheses](figures/figure_4_substrate_sharing.svg)
-
-Figure 1 and Figure 2 are derived directly from the bibliometric findings reported in [`bibliometric_findings_v3.md`](bibliometric_findings_v3.md) and [`citation_network_analysis.md`](citation_network_analysis.md). The numbers shown are the headline results from those analyses.
-
-Figure 3 is generated from the populated matrix; cell-status counts in the figure match the paper's reported counts: 14 IMPLEMENTED, 62 PARTIAL, 80 INCIDENTAL, 188 Type 1 EMPTY, 90 Type 4 EMPTY (total 434).
-
-Figure 4 is a designed architectural diagram, not a data visualization; substrate-sharing relationships are documented in the paper's Sections 5–10 and (when v1.1 lands) in `proposals.md` and the per-hypothesis implementation specifications.
+---
 
 ## Repository contents
 
-```
-.
-├── README.md                                # this file
-├── LICENSE                                  # CC BY 4.0
-├── MISSING_ARTIFACTS.md                     # what's pending in v1.1
-├── paper.md                                 # main paper (~22,500 words, 13 sections)
-├── figures/                                 # four standalone SVG figures
-├── citation_network_analysis.md             # n=100 survey + bibliometric extension
-├── bibliometric_findings.md                 # v1 corpus findings (30,935 papers)
-├── bibliometric_findings_v2.md              # v2 corpus findings (33,469 papers, superseded by v3)
-├── bibliometric_findings_v3.md              # v3 final calibrated findings (53,792 papers)
-├── bibliometric_extension/                  # execution specs + reproducibility scripts
-├── philosophical_accounting.md              # substantive-vs-decorative apparatus accounting
-├── novel_prediction_operationalization.md   # PPT operationalization with 6 worked examples
-└── preregistered_matrix_predictions.md      # held-out validation on 8 systems
-```
+**Primary deliverable:**
+- `paper.md` — main paper (~22,500 words across 13 sections plus references), with four inline figures
 
-## Release attachments
+**Standalone figures:** `figures/` directory
 
-Large derived data bundles (raw OpenAlex parquet files, BERTopic models, run logs) are attached to the v1.0 release as `.tar.gz` downloads rather than committed to the repo:
+**Bibliometric analysis:**
+- `citation_network_analysis.md`
+- `bibliometric_findings.md`, `bibliometric_findings_v2.md`, `bibliometric_findings_v3.md`
+- `bibliometric_extension/` (execution specifications and scripts)
 
-- `bibliometrics_v1.tar.gz` (~32 MB) — v1 strict drug-discovery corpus + scripts
-- `bibliometrics_v2.tar.gz` (~32 MB) — v2 broader chemistry-AI methodology corpus
-- `bibliometrics_v3.tar.gz` (~49 MB) — v3 final 53,792-paper corpus + BERTopic model
+**Methodological accounting:**
+- `philosophical_accounting.md`
+- `novel_prediction_operationalization.md`
+- `preregistered_matrix_predictions.md`
 
-To reproduce the bibliometric analyses:
-1. Download the appropriate tarball from the release page
-2. Extract: `tar xzf bibliometrics_v3.tar.gz`
-3. Reproducibility scripts and `run_full_analysis*.sh` are inside
+**Honest accounting of what's pending:**
+- `MISSING_ARTIFACTS.md`
+- `RELEASE_NOTES_v1.0.md`
 
-## License
+**Release attachments (downloadable from v1.0 release):**
+- `bibliometrics_v1.tar.gz`, `bibliometrics_v2.tar.gz`, `bibliometrics_v3.tar.gz`
 
-CC BY 4.0 (Creative Commons Attribution 4.0 International). All figures, paper text, and supplementary materials are released under this license.
+---
+
+## Reading guide
+
+If you have 10 minutes: read `paper.md` Sections 1.1, 3 (overall + cluster table), 4.1 (X9 finding), and 13 (conclusion).
+
+If you have 30 minutes: add Sections 5 (P1 brief), 11.5 (experimental program), 12 (deployment paths).
+
+If you have 90 minutes: read the full paper.md.
+
+If you want to verify the bibliometric claims: read `bibliometric_findings_v3.md` and the bibliometric data tarballs attached to the v1.0 release.
+
+If you want to evaluate the matrix construction: read `philosophical_accounting.md` and `preregistered_matrix_predictions.md`.
+
+---
 
 ## Cite as
 
 ```
-Maxwell, M.H. (2026). The Citation Gap Between Drug-Discovery AI and Creativity Research:
-A 53,792-Paper Bibliometric Analysis with Architectural Hypotheses. bioRxiv DOI: [INSERT DOI].
+Maxwell, M.H. (2026). Expanding the Method Space of Drug-Discovery AI:
+Directions from Creativity Research. SSRN preprint.
 American Institute for Medical Research (AIMR).
 ```
 
-## Acknowledgments
+---
 
-Section 1.4 of `paper.md` and the Acknowledgments document the substantial role of LLM assistance (primarily Claude / Claude Code, Anthropic) in producing this work, including the bibliometric extension at 53,792-paper scale that would not have been feasible without automated execution. The author takes full responsibility for all contents of the paper.
+## Contact
 
-## Issues and corrections
-
-The author welcomes corrections, replications, and extensions. Please open a GitHub issue for any factual or methodological concern.
+Correspondence: matt@aimronline.org
